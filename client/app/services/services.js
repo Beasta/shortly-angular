@@ -1,10 +1,10 @@
 angular.module('shortly.services', [])
 
 .factory('Links', function ($http) {
-  var getLinks= function () {
+  var getLinks = function () {
     return $http({
       method: 'GET',
-      url: '/api/links',
+      url: '/api/links'
     });
   };
   return {
